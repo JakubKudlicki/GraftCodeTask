@@ -30,19 +30,19 @@ This is a **Library project** (`OutputType=Library`) and is not meant to be exec
 
 Graftcode Gateway requires the compiled DLL. 
 
-dotnet build .\\GraftCodeTask.csproj
-dotnet publish .\\GraftCodeTask.csproj -c Release
+`dotnet build .\\GraftCodeTask.csproj`
+`dotnet publish .\\GraftCodeTask.csproj -c Release`
 
 
 1. Running Locally:
 
-gg --projectKey project_key --modules your_module
+`gg --projectKey project_key --modules your_module`
 
 Then open the Graftcode Vision interface (`http://localhost:81/GV`) to test the exposed methods.
 
 2. Running with Docker:
 
-docker build --no-cache --pull -t graftcodetask:test .
-docker run -d -p 80:80 -p 81:81 --name graftcode_task graftcodetask:test
+`docker build --no-cache --pull -t graftcodetask:test .`
+`docker run -d -p 80:80 -p 81:81 --name graftcode_task graftcodetask:test`
 
 Then open the Graftcode Vision interface (`http://localhost:81/GV`) to test the exposed methods.
