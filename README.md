@@ -31,6 +31,7 @@ This is a **Library project** (`OutputType=Library`) and is not meant to be exec
 Graftcode Gateway requires the compiled DLL. 
 
 `dotnet build .\\GraftCodeTask.csproj`
+
 `dotnet publish .\\GraftCodeTask.csproj -c Release`
 
 
